@@ -1,0 +1,21 @@
+.searchForm {
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2%;
+    margin-top: 2%;
+}
+.inputForm {
+    width: 100%;
+    padding-left: 7px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    border: 1 px #fbceb1;
+    border-color: #fbceb1;
+    border-style: solid;
+    border-width: thin;
+}
+:active, :hover, :focus {
+    outline: 0;
+    outline-offset: 0;
+}

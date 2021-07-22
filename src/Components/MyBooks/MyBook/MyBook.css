@@ -1,0 +1,143 @@
+.book {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    border: 1px solid #fbceb1;
+    height: 10%;
+  }
+  
+  .book .image {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .book .imageContainer {
+    background: white;
+    width: 20%;
+  }
+  
+  .book .title {
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 5%;
+    font-size: 18px;
+  }
+  .book .content {
+    width: 40%;
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+  div.block {
+    width: 30%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 3%;
+    padding: 20px;
+    border-radius: 5px;
+    background: #fcfcee;
+    /* box-shadow: 0 0 10px 3px rgb(224, 224, 224); */
+    text-align: center;
+}
+
+div.block .title {
+    padding: 0;
+    padding-left: 10px;
+    margin-bottom: 20px;
+}
+
+div.block .title h2,
+div.block .title p,
+div.block .title hr {
+    padding: 0;
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+div.block .title p a {
+    text-decoration: none;
+    color: rgb(116, 116, 255)
+}
+
+div.block .title hr {
+    width: 100%;
+    outline: none;
+    /* color: rgb(54, 54, 54); */
+}
+
+div.block .form {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+}
+
+div.block .form .myinput {
+    width: 100%;
+}
+
+.but {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    border: none;
+    background-color: #fbceb1;
+    padding: 14px 16px 14px 16px;
+    color: #49423d;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 17px;
+    text-decoration: none;
+}
+
+div.block but:hover {
+    background-color: #fbceb1;
+    color: #fafafa;
+}
+
+@media screen and (max-width: 500px) {
+    div.block {
+        width: 80%;
+    }
+}
+.cl-btn-7 {
+	width: 2px;
+	height: 2px;
+	position: relative;
+	z-index: 1;
+	cursor: pointer;
+}
+.cl-btn-7:before {
+	content: '+';
+	position: absolute;
+	z-index: 2;
+	transform: rotate(45deg);
+
+}
+.cl-btn-7:after {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	border-radius: 100%;
+	z-index: 1;
+	transition: all 0.3s cubic-bezier(0.77, 0, 0.2, 0.85);
+	transform: scale(0.01);
+}
+.cl-btn-7:hover:before {
+	color: #fff;
+}
+.oneForm{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+.list{
+  overflow-y: auto;
+  height: 20%;
+}

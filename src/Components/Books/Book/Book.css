@@ -1,0 +1,100 @@
+.book {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    border: 1px solid #fbceb1;
+    height: 10%;
+    font-size: 17px;
+  }
+  
+  .book .image {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .book .imageContainer {
+    background: white;
+    width: 20%;
+  }
+  
+  .book .title {
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 5%;
+    font-size: 1px;
+  }
+  .book .content {
+    width: 40%;
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+  div.block {
+    width: 30%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 3%;
+    padding: 20px;
+    border-radius: 5px;
+    background: #fcfcee;
+    /* box-shadow: 0 0 10px 3px rgb(224, 224, 224); */
+    text-align: center;
+}
+
+div.block .title {
+    padding: 0;
+    padding-left: 10px;
+    margin-bottom: 20px;
+}
+
+div.block .title h2,
+div.block .title p,
+div.block .title hr {
+    padding: 0;
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+div.block .title p a {
+    text-decoration: none;
+    color: rgb(116, 116, 255)
+}
+
+div.block .title hr {
+    width: 100%;
+    outline: none;
+    /* color: rgb(54, 54, 54); */
+}
+
+div.block .form {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+}
+
+div.block .form .myinput {
+    width: 100%;
+}
+
+
+@media screen and (max-width: 500px) {
+    div.block {
+        width: 80%;
+    }
+}
+.oneForm{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+.bt{
+  padding-left: 2%;
+}
+.list{
+  overflow-y: auto;
+    height: 20%;
+}
