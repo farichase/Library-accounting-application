@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import './Users.css'
-import Searchbar from '../Searchbar/Searchbar';
+import Searchbar from '../Searchbar/Searchbar.jsx';
 
 
 class Users extends Component {

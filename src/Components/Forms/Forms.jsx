@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import './Forms.css'
-import Searchbar from '../Searchbar/Searchbar';
+import Searchbar from '../Searchbar/Searchbar.jsx';
 
 
 class Forms extends Component {

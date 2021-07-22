@@ -1,9 +1,9 @@
 import React, { Component } from 'react'
-import Searchbar from '../Searchbar/Searchbar'
-import MyBook from './MyBook/MyBook'
-import './MyBooks.css'
+import Searchbar from '../Searchbar/Searchbar.jsx'
+import Book from './Book/Book.jsx'
+import './Books.css'
 
-class MyBooks extends Component {
+class Books extends Component {
 
     state = {
         books: [], 
@@ -11,13 +11,7 @@ class MyBooks extends Component {
     }
 
     getBooks = async () => {
-        const res = await fetch('http://localhost:8080/books/mybooks/', {
-            method: 'POST',
-            headers: { "Content-Type": "application/json" },
-            body: JSON.stringify({
-                email: this.props.email
-            })
-        })
+        const res = await fetch('http://localhost:8080/books/')
         if(!res.ok) {
             throw Error('Could not get all books')
         }
@@ -30,6 +24,9 @@ class MyBooks extends Component {
                 exBooks: response.data
             })
         })
+    }
+    updateBooks = () => {
+        this.componentDidMount()
     }
     updateData = (newData, query) => {
         if (query.length === 0){
@@ -46,20 +43,20 @@ class MyBooks extends Component {
         return (
             <main className="app-wrapper">
                 <Searchbar data={this.state.books} updateData={this.updateData}/>
-                
                 <div className="items">
                     {
                         this.state.books.map(item => {
                             return (
-                                <MyBook
-                                    key={item.formNumber}
+                                <Book
+                                    key={item.id}
                                     bookId={item.id}
                                     name={item.name}
                                     authors={item.authors}
                                     genre = {item.genre}
-                                    formNumber={item.formNumber}
                                     houses={item.houses}
-                                    returnDate={item.returnDate}
+                                    quantityInStock={item.quantityInStock}
+                                    isEmployee={this.props.isEmployee}
+                                    updateBooks={this.updateBooks}
                                 />
                             )
                         })
@@ -71,4 +68,4 @@ class MyBooks extends Component {
 }
 
 
-export default MyBooks;
+export default Books;
