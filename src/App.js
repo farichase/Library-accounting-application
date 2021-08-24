@@ -1,19 +1,19 @@
 import React, { Component } from 'react';
 import './App.css';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
-import NavBar from './Components/NavBar/NavBar.jsx';
-import Books from './Components/Books/Books.jsx';
-import LoginPage from './Components/LoginPage/LoginPage.jsx';
-import SignUpPage from './Components/SignUpPage/SignUpPage.jsx';
+import NavBar from './Components/NavBar/NavBar';
+import Books from './Components/Books/Books';
+import LoginPage from './Components/LoginPage/LoginPage';
+import SignUpPage from './Components/SignUpPage/SignUpPage';
 import { Fragment } from 'react';
-import MyBooks from './Components/MyBooks/MyBooks.jsx';
-import Forms from './Components/Forms/Forms.jsx';
-import UserPage from './Components/UserPage/UserPage.jsx';
-import AdminPage from './Components/AdminPage/AdminPage.jsx';
-import AddInf from './Components/AddInf/AddInf.jsx';
-import Authors from './Components/Authors/Authors.jsx';
-import PublishingHouses from './Components/PublishingHouses/PublishingHouses.jsx';
-import Users from './Components/Users/Users.jsx';
+import MyBooks from './Components/MyBooks/MyBooks';
+import Forms from './Components/Forms/Forms';
+import UserPage from './Components/UserPage/UserPage';
+import AdminPage from './Components/AdminPage/AdminPage';
+import AddInf from './Components/AddInf/AddInf';
+import Authors from './Components/Authors/Authors';
+import PublishingHouses from './Components/PublishingHouses/PublishingHouses';
+import Users from './Components/Users/Users';
 
 class App extends Component {
 

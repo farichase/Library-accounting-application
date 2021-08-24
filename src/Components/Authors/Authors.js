@@ -1,16 +1,16 @@
 import React, { Component } from 'react'
-import './PublishingHouses.css'
-import Searchbar from '../Searchbar/Searchbar.jsx';
+import './Authors.css'
+import Searchbar from '../Searchbar/Searchbar';
 
 
-class PublishingHouses extends Component {
+class Authors extends Component {
     state = {
         exData: [],
         authors: []
     }
 
     getauthors = async () => {
-        const res = await fetch('http://localhost:8080/employee/publishingHouses/')
+        const res = await fetch('http://localhost:8080/employee/authors/')
         if (!res.ok) {
             throw Error('Could not get all authors')
         }
@@ -56,4 +56,4 @@ class PublishingHouses extends Component {
     }
 }
 
-export default PublishingHouses
+export default Authors
